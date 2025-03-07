@@ -9,7 +9,11 @@
 
 Le but de ce projet et de manipuler les bases de l'HTML et du CSS pour créer une page web simple.
 
-![desktop](./docs/html-css-quest-mandatory-1-desktop.png)
+![desktop](./docs/html-css-quest-mandatory-1-mobile.png)
+
+## 👀 Ce que je vois
+
+![see](./docs/ce-que-je-vois.png)
 
 ## Auteur
 
