@@ -1,8 +1,17 @@
+/**
+* :root est une pseudo-classe qui permet de définir des variables CSS personnalisées.
+* Ces variables peuvent être utilisées dans n'importe quelle règle CSS.
+* Ici, on définit deux variables : --primary-color et --secondary-color.
+*/
 :root {
 	--primary-color: #a306b6;
 	--secondary-color: #d9d9d9;
 }
 
+/**
+* @font-face est une règle CSS qui permet de définir des polices personnalisées.
+* Ici, on définit deux polices : Montserrat et Source Sans 3.
+*/
 @font-face {
 	font-family: "Montserrat";
 	src: url("./assets/fonts/montserrat.ttf");
@@ -24,6 +33,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* Je précise ici, que tout mon site sera en source sans 3 */
 	font-family: "Source Sans 3", sans-serif;
 }
 /************ /Global Styles ************/
@@ -99,7 +109,6 @@ header nav ul li a {
 		width: 250px;
 	}
 }
-
 /************ /Header Styles ************/
 
 /************** Main Styles *************/
