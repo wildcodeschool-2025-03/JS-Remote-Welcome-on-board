@@ -1,0 +1,205 @@
+:root {
+	--primary-color: #a306b6;
+	--secondary-color: #d9d9d9;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/montserrat.ttf");
+}
+
+@font-face {
+	font-family: "Source Sans 3";
+	src: url("./assets/fonts/sourcesans3.ttf");
+}
+
+/************ Global Styles ************/
+h1,
+h2,
+h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Source Sans 3", sans-serif;
+}
+/************ /Global Styles ************/
+
+/************ Header Styles ************/
+header {
+	background-color: var(--primary-color);
+}
+
+header section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		padding-bottom: 2rem;
+	}
+}
+
+header h1 {
+	color: white;
+	font-size: 1.5rem;
+	margin: 1rem;
+	width: 40%;
+	text-align: center;
+
+	@media screen and (min-width: 992px) {
+		font-size: 2.5rem;
+		width: 15%;
+	}
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+
+	@media screen and (min-width: 992px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+header nav ul {
+	display: flex;
+	list-style: none;
+}
+
+header nav ul li {
+	margin: 1rem;
+}
+
+header nav ul li a {
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+#logo {
+	width: 50px;
+}
+
+#avatar {
+	width: 120px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 2px solid white;
+
+	@media screen and (min-width: 992px) {
+		width: 250px;
+	}
+}
+
+/************ /Header Styles ************/
+
+/************** Main Styles *************/
+
+#main-content {
+	padding: 1.2rem;
+
+	@media screen and (min-width: 992px) {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+section h2 {
+	text-align: center;
+	font-size: 1.3rem;
+	color: var(--primary-color);
+
+	@media screen and (min-width: 992px) {
+		font-size: 2rem;
+		padding: 1rem 0;
+	}
+}
+
+#articles {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+}
+
+#articles article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--secondary-color);
+	border-radius: 3%;
+	margin: 1rem 0;
+	padding: 1rem;
+}
+
+#articles article img {
+	width: 100%;
+	padding: 1rem;
+}
+
+#articles article h3 {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+#articles article button {
+	background-color: var(--primary-color);
+	color: white;
+	margin-top: 1rem;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 30px;
+	width: 100px;
+	padding: 0.3rem;
+	cursor: pointer;
+
+	@media screen and (min-width: 992px) {
+		margin-top: auto;
+	}
+}
+
+#about {
+	margin: 2.5rem 0 4rem 0;
+
+	@media screen and (min-width: 992px) {
+		margin: 5rem 10rem 4rem 10rem;
+	}
+}
+
+#about p {
+	margin: 1rem 0;
+}
+
+/************** /Main Styles *************/
+
+/************* /Footer Styles ************/
+footer {
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	background-color: var(--secondary-color);
+}
+
+footer a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+#heart {
+	color: red;
+}
+/************* /Footer Styles ************/
