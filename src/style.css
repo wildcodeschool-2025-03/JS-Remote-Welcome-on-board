@@ -38,7 +38,7 @@ header section {
 	flex-direction: column;
 	align-items: center;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 992px) {
 		flex-direction: row-reverse;
 		justify-content: space-around;
 		padding-bottom: 2rem;
@@ -128,7 +128,7 @@ section h2 {
 	display: grid;
 	grid-template-columns: 1fr;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 992px) {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 	}
